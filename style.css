@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700;800&display=swap');
+:root{
+
+    --cor1:hsl(185, 75%, 39%);
+    --cor2:hsl(229, 23%, 23%);
+    --cor3:hsl(227, 10%, 46%);
+    --cor4: hsl(0, 0%, 59%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body,html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 55vh, left 52vw top 55vh;
+    background-repeat: no-repeat, no-repeat;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--cor1);
+    font-size: 13px;
+    color: var(--cor3);
+    
+}
+main{
+    position: relative;
+    height: 380px;
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.perfil-icon{
+ 
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    border-radius: 50%;
+    background: url(images/image-victor.jpg)no-repeat center center;
+    background-size: contain;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 230px;
+    width: 320px;
+    text-align: center;
+}
+
+.sub-flex{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 75px;
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+}
+.name{
+    padding-bottom: 45px;
+}
+
+strong{
+    font-size: 20px;
+    color: var(--cor2);
+}
+
